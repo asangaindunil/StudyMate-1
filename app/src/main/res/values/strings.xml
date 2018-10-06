@@ -135,6 +135,7 @@
     <string name="related_quiz_bt">Related Quiz</string>
     <string name="home_bt_scoreboard">Home</string>
     <string name="txt_count_hardcode">2</string>
+    <string name="Sessionupdate">Update</string>
     <string-array name="quiz_type_spinner_items">
         <item>Single Answer</item>
         <item>Multiple Answer</item>

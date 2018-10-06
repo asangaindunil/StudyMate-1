@@ -41,8 +41,6 @@ public class NoteCardAdapter extends RecyclerView.Adapter<NoteCardAdapter.NoteVi
         mListener = listner;
     }
 
-    //to different color for each card set color
-    Random random = new Random(20);
     private List<Note> noteItemList;
 
     public NoteCardAdapter(List<Note> noteItemList, Context context) {
@@ -91,9 +89,7 @@ public class NoteCardAdapter extends RecyclerView.Adapter<NoteCardAdapter.NoteVi
             txtTitle=view.findViewById(R.id.idNoteTitle);
             txtParaCount = view.findViewById(R.id.idParagraphCount);
             txtTag = view.findViewById(R.id.idNoteTag);
-            //to different color for each card set color
-            layout = view.findViewById(R.id.idNoteFirstPortionLayout);
-            layout.setBackgroundColor(random.nextInt());
+
 
             view.setOnClickListener(new View.OnClickListener() {
                 @Override

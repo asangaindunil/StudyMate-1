@@ -59,7 +59,7 @@ public class UpdateSessionActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (updateSession() != 0) {
+                if (updateSession() != -1) {
                     Toast.makeText(getApplicationContext(), "Session updated!", Toast.LENGTH_SHORT).show();
                 } else {
                     Toast.makeText(getApplicationContext(), "Update failed!", Toast.LENGTH_SHORT).show();

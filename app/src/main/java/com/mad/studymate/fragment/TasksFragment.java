@@ -43,8 +43,8 @@ public class TasksFragment extends Fragment {
     private Menu menu;
     private SearchView mSearchView;
 
-    //add notes fab
-    FloatingActionButton fab;
+    FloatingActionButton fab;    //add notes fab
+
 
     private RecyclerView mRecyclerView;
     private TaskCardAdapter mAdapter;

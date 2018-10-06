@@ -18,6 +18,10 @@
     <!--gridview card color-->
     <color name="gridcard_light_background">#eeeeee</color>
     <color name="card_first_portion">#c089d8de</color>
+    <color name="SessionTitleColor">#ffffff</color>
+    <color name="SessionCardLayout">#8470ff</color>
+    <color name="SessionViewLable">#1e90ff</color>
+    <color name="BackgroundColor">#b2beb5</color>
 </resources>
 
     <!--<?xml version="1.0" encoding="utf-8"?>--><!--<resources>--><!--<color name="colorPrimary">#3F51B5</color>--><!--<color name="colorPrimaryDark">#303F9F</color>--><!--<color name="colorAccent">#FF4081</color>--><!--</resources>-->

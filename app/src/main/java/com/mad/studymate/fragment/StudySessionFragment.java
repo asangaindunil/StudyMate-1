@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -14,6 +15,7 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import com.mad.studymate.R;
+import com.mad.studymate.activity.AddSessionActivity;
 import com.mad.studymate.activity.FridaySessionActivity;
 import com.mad.studymate.activity.MainActivity;
 import com.mad.studymate.activity.MondaySessionActivity;
@@ -23,10 +25,13 @@ import com.mad.studymate.activity.ThursdaySessionActivity;
 import com.mad.studymate.activity.TuesdaySessionActivity;
 import com.mad.studymate.activity.WendsdaySessionActivity;
 
+
 public class StudySessionFragment extends Fragment {
     //List view for days of week
     ListView lv;
     private OnFragmentInteractionListener mListener;
+    FloatingActionButton fab;
+
 
     public StudySessionFragment() {
         // Required empty public constructor
@@ -84,7 +89,16 @@ public class StudySessionFragment extends Fragment {
             }
 
         });
+        fab = view.findViewById(R.id.idSAddFab);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), AddSessionActivity.class);
+                startActivity(intent);
+            }
+        });
         return view;
+
     }
 
     public void onButtonPressed(Uri uri) {

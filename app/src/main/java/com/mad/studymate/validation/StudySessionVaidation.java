@@ -22,10 +22,14 @@ public class StudySessionVaidation {
         } else if (description.isEmpty()) {
             Toast.makeText(context, "description cannot be empty", Toast.LENGTH_SHORT).show();
             return false;
-        } else if (startTime.isEmpty() && endTime.isEmpty()) {
+        } else if (startTime.isEmpty() ) {
+            Toast.makeText(context, "start and end time cannot be empty", Toast.LENGTH_SHORT).show();
+            return false;
+        }else if (endTime.isEmpty()) {
             Toast.makeText(context, "start and end time cannot be empty", Toast.LENGTH_SHORT).show();
             return false;
         }
+
 
         if (startTime.equals(endTime)) {
             Toast.makeText(context, "You should have proper time period", Toast.LENGTH_SHORT).show();

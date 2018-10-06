@@ -47,8 +47,7 @@ public class TaskCardAdapter extends RecyclerView.Adapter<TaskCardAdapter.TaskVi
         mListener = listner;
     }
 
-    //to different color for each card set color
-    Random random = new Random(20);
+
     private List<Task> taskItemList;
 
     public TaskCardAdapter(List<Task> taskItemList, Context context) {
@@ -173,9 +172,7 @@ public class TaskCardAdapter extends RecyclerView.Adapter<TaskCardAdapter.TaskVi
             txtTimePeriod = view.findViewById(R.id.idTimePeriod);
             btDoneCheck = view.findViewById(R.id.idMarkDoneCheck);
 
-            //to different color for each card set color
-            layout = view.findViewById(R.id.idTaskFirstPortionLayout);
-            layout.setBackgroundColor(random.nextInt());
+
 
             view.setOnClickListener(new View.OnClickListener() {
                 @Override

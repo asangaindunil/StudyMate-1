@@ -108,4 +108,7 @@
     <dimen name="signup_label_tf_margin_top">20dp</dimen>
     <dimen name="splash_image_width">340dp</dimen>
     <dimen name="splash_image_height">430dp</dimen>
+    <dimen name="SessionCardheight">100dp</dimen>
+    <dimen name="SessionCardFirstSessionLayoutWidth">100dp</dimen>
+    <dimen name="ProgressBarWidth">240dp</dimen>
 </resources>
